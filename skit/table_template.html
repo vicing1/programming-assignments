@@ -1,0 +1,26 @@
+<table>
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>User</th>
+    <th>Value</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th>Category</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+            <tr>
+            <td>{{ transaction.id }}</td>
+            <td>{{ transaction.user }}</td>
+            <td>{{ transaction.value }}</td>
+            <td>{{ transaction.type }}</td>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.category }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    
+    
